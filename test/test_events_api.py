@@ -28,6 +28,12 @@ class TestEventsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
+    def test_delete_events_parameters_delete(self):
+        """Test case for delete_events_parameters_delete
+
+        """
+        pass
+
     def test_get_events_get(self):
         """Test case for get_events_get
 

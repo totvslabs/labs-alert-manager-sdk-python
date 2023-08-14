@@ -4,11 +4,86 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**delete_events_parameters_delete**](EventsApi.md#delete_events_parameters_delete) | **DELETE** /events/parameters/{app_key} | 
 [**get_events_get**](EventsApi.md#get_events_get) | **GET** /events/{id} | 
 [**get_events_get_all**](EventsApi.md#get_events_get_all) | **GET** /events | 
 [**get_events_parameters_get**](EventsApi.md#get_events_parameters_get) | **GET** /events/parameters | 
 [**post_events_post**](EventsApi.md#post_events_post) | **POST** /events | 
 
+
+# **delete_events_parameters_delete**
+> str delete_events_parameters_delete(app_key)
+
+
+
+### Example
+
+* Api Key Authentication (auth_token):
+```python
+import time
+import os
+import labs_alert_manager_client
+from labs_alert_manager_client.rest import ApiException
+from pprint import pprint
+
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = labs_alert_manager_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure API key authorization: auth_token
+configuration.api_key['auth_token'] = os.environ["API_KEY"]
+
+# Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+# configuration.api_key_prefix['auth_token'] = 'Bearer'
+
+# Enter a context with an instance of the API client
+with labs_alert_manager_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = labs_alert_manager_client.EventsApi(api_client)
+    app_key = 'app_key_example' # str | 
+
+    try:
+        api_response = api_instance.delete_events_parameters_delete(app_key)
+        print("The response of EventsApi->delete_events_parameters_delete:\n")
+        pprint(api_response)
+    except Exception as e:
+        print("Exception when calling EventsApi->delete_events_parameters_delete: %s\n" % e)
+```
+
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **app_key** | **str**|  | 
+
+### Return type
+
+**str**
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | A successful response |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_events_get**
 > EventSchema get_events_get(id)
