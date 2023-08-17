@@ -38,7 +38,9 @@ class TestPolicySchema(unittest.TestCase):
         model = labs_alert_manager_client.models.policy_schema.PolicySchema()  # noqa: E501
         if include_optional :
             return PolicySchema(
-                channels = None, 
+                channels = [
+                    ''
+                    ], 
                 client_source = '', 
                 client_uuid = '', 
                 created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
@@ -57,7 +59,9 @@ class TestPolicySchema(unittest.TestCase):
             )
         else :
             return PolicySchema(
-                channels = None,
+                channels = [
+                    ''
+                    ],
                 client_source = '',
                 client_uuid = '',
                 deleted = True,

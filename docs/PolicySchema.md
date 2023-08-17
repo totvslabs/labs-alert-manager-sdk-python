@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | **object** | List of channel notification | 
+**channels** | **List[str]** | List of channel notification | 
 **client_source** | **str** | Policy Client source | 
 **client_uuid** | **str** | Policy Client UUID | 
 **created_at** | **datetime** |  | [optional] 

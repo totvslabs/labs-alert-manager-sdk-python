@@ -15,6 +15,7 @@
 
 # import models into model package
 from labs_alert_manager_client.models.event_schema import EventSchema
+from labs_alert_manager_client.models.notification_schema import NotificationSchema
 from labs_alert_manager_client.models.pagination_schema import PaginationSchema
 from labs_alert_manager_client.models.policy_channel_schema import PolicyChannelSchema
 from labs_alert_manager_client.models.policy_schema import PolicySchema

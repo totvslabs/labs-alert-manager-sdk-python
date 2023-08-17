@@ -40,6 +40,12 @@ class TestNotificationsApi(unittest.TestCase):
         """
         pass
 
+    def test_post_notification_log_resend(self):
+        """Test case for post_notification_log_resend
+
+        """
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()

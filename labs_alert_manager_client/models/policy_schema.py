@@ -18,14 +18,14 @@ import re  # noqa: F401
 import json
 
 from datetime import datetime
-from typing import Any, Dict, Optional
-from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr
+from typing import Any, Dict, List, Optional
+from pydantic import BaseModel, Field, StrictBool, StrictInt, StrictStr, conlist
 
 class PolicySchema(BaseModel):
     """
     PolicySchema
     """
-    channels: Dict[str, Any] = Field(..., description="List of channel notification")
+    channels: conlist(StrictStr) = Field(..., description="List of channel notification")
     client_source: StrictStr = Field(..., description="Policy Client source")
     client_uuid: StrictStr = Field(..., description="Policy Client UUID")
     created_at: Optional[datetime] = None
