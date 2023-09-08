@@ -14,45 +14,43 @@
 
 import unittest
 
-import labs_alert_manager_client
 from labs_alert_manager_client.api.policies_api import PoliciesApi  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 
 class TestPoliciesApi(unittest.TestCase):
     """PoliciesApi unit test stubs"""
 
-    def setUp(self):
-        self.api = labs_alert_manager_client.api.policies_api.PoliciesApi()  # noqa: E501
+    def setUp(self) -> None:
+        self.api = PoliciesApi()  # noqa: E501
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass
 
-    def test_delete_policies_delete(self):
+    def test_delete_policies_delete(self) -> None:
         """Test case for delete_policies_delete
 
         """
         pass
 
-    def test_get_policies_get(self):
+    def test_get_policies_get(self) -> None:
         """Test case for get_policies_get
 
         """
         pass
 
-    def test_get_policies_get_all(self):
+    def test_get_policies_get_all(self) -> None:
         """Test case for get_policies_get_all
 
         """
         pass
 
-    def test_post_policies_post(self):
+    def test_post_policies_post(self) -> None:
         """Test case for post_policies_post
 
         """
         pass
 
-    def test_put_policies_put(self):
+    def test_put_policies_put(self) -> None:
         """Test case for put_policies_put
 
         """

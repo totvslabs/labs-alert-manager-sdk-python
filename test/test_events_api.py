@@ -14,45 +14,43 @@
 
 import unittest
 
-import labs_alert_manager_client
 from labs_alert_manager_client.api.events_api import EventsApi  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 
 class TestEventsApi(unittest.TestCase):
     """EventsApi unit test stubs"""
 
-    def setUp(self):
-        self.api = labs_alert_manager_client.api.events_api.EventsApi()  # noqa: E501
+    def setUp(self) -> None:
+        self.api = EventsApi()  # noqa: E501
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass
 
-    def test_delete_events_parameters_delete(self):
+    def test_delete_events_parameters_delete(self) -> None:
         """Test case for delete_events_parameters_delete
 
         """
         pass
 
-    def test_get_events_get(self):
+    def test_get_events_get(self) -> None:
         """Test case for get_events_get
 
         """
         pass
 
-    def test_get_events_get_all(self):
+    def test_get_events_get_all(self) -> None:
         """Test case for get_events_get_all
 
         """
         pass
 
-    def test_get_events_parameters_get(self):
+    def test_get_events_parameters_get(self) -> None:
         """Test case for get_events_parameters_get
 
         """
         pass
 
-    def test_post_events_post(self):
+    def test_post_events_post(self) -> None:
         """Test case for post_events_post
 
         """

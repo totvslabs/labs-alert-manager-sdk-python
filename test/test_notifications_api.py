@@ -14,33 +14,31 @@
 
 import unittest
 
-import labs_alert_manager_client
 from labs_alert_manager_client.api.notifications_api import NotificationsApi  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 
 class TestNotificationsApi(unittest.TestCase):
     """NotificationsApi unit test stubs"""
 
-    def setUp(self):
-        self.api = labs_alert_manager_client.api.notifications_api.NotificationsApi()  # noqa: E501
+    def setUp(self) -> None:
+        self.api = NotificationsApi()  # noqa: E501
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass
 
-    def test_get_notification_log_get(self):
+    def test_get_notification_log_get(self) -> None:
         """Test case for get_notification_log_get
 
         """
         pass
 
-    def test_get_notification_log_get_all(self):
+    def test_get_notification_log_get_all(self) -> None:
         """Test case for get_notification_log_get_all
 
         """
         pass
 
-    def test_post_notification_log_resend(self):
+    def test_post_notification_log_resend(self) -> None:
         """Test case for post_notification_log_resend
 
         """

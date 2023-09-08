@@ -36,12 +36,9 @@ class PolicySchema(BaseModel):
     frequency_minutes: StrictInt = Field(..., description="Quantity of alert interval time")
     frequency_occurrences: StrictInt = Field(..., description="Quantity of alert occurrencies")
     id: StrictStr = Field(..., description="Id")
-    labels: Dict[str, Any] = Field(..., description="Policy labels")
     name: StrictStr = Field(..., description="Policy name")
-    severity: StrictStr = Field(..., description="Policy severity")
-    type: StrictStr = Field(..., description="Policy type")
     updated_at: Optional[datetime] = None
-    __properties = ["channels", "client_source", "client_uuid", "created_at", "deleted", "enabled", "filters", "frequency", "frequency_minutes", "frequency_occurrences", "id", "labels", "name", "severity", "type", "updated_at"]
+    __properties = ["channels", "client_source", "client_uuid", "created_at", "deleted", "enabled", "filters", "frequency", "frequency_minutes", "frequency_occurrences", "id", "name", "updated_at"]
 
     class Config:
         """Pydantic configuration"""
@@ -90,10 +87,7 @@ class PolicySchema(BaseModel):
             "frequency_minutes": obj.get("frequency_minutes"),
             "frequency_occurrences": obj.get("frequency_occurrences"),
             "id": obj.get("id"),
-            "labels": obj.get("labels"),
             "name": obj.get("name"),
-            "severity": obj.get("severity"),
-            "type": obj.get("type"),
             "updated_at": obj.get("updated_at")
         })
         return _obj

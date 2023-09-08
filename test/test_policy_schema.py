@@ -15,9 +15,7 @@
 import unittest
 import datetime
 
-import labs_alert_manager_client
 from labs_alert_manager_client.models.policy_schema import PolicySchema  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 class TestPolicySchema(unittest.TestCase):
     """PolicySchema unit test stubs"""
@@ -28,36 +26,33 @@ class TestPolicySchema(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def make_instance(self, include_optional):
+    def make_instance(self, include_optional) -> PolicySchema:
         """Test PolicySchema
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
         # uncomment below to create an instance of `PolicySchema`
         """
-        model = labs_alert_manager_client.models.policy_schema.PolicySchema()  # noqa: E501
-        if include_optional :
+        model = PolicySchema()  # noqa: E501
+        if include_optional:
             return PolicySchema(
                 channels = [
                     ''
-                    ], 
-                client_source = '', 
-                client_uuid = '', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                deleted = True, 
-                enabled = True, 
-                filters = None, 
-                frequency = True, 
-                frequency_minutes = 56, 
-                frequency_occurrences = 56, 
-                id = '', 
-                labels = None, 
-                name = '', 
-                severity = '', 
-                type = '', 
+                    ],
+                client_source = '',
+                client_uuid = '',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                deleted = True,
+                enabled = True,
+                filters = None,
+                frequency = True,
+                frequency_minutes = 56,
+                frequency_occurrences = 56,
+                id = '',
+                name = '',
                 updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f')
             )
-        else :
+        else:
             return PolicySchema(
                 channels = [
                     ''
@@ -71,10 +66,7 @@ class TestPolicySchema(unittest.TestCase):
                 frequency_minutes = 56,
                 frequency_occurrences = 56,
                 id = '',
-                labels = None,
                 name = '',
-                severity = '',
-                type = '',
         )
         """
 

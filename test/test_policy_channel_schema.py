@@ -15,9 +15,7 @@
 import unittest
 import datetime
 
-import labs_alert_manager_client
 from labs_alert_manager_client.models.policy_channel_schema import PolicyChannelSchema  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 class TestPolicyChannelSchema(unittest.TestCase):
     """PolicyChannelSchema unit test stubs"""
@@ -28,28 +26,28 @@ class TestPolicyChannelSchema(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def make_instance(self, include_optional):
+    def make_instance(self, include_optional) -> PolicyChannelSchema:
         """Test PolicyChannelSchema
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
         # uncomment below to create an instance of `PolicyChannelSchema`
         """
-        model = labs_alert_manager_client.models.policy_channel_schema.PolicyChannelSchema()  # noqa: E501
-        if include_optional :
+        model = PolicyChannelSchema()  # noqa: E501
+        if include_optional:
             return PolicyChannelSchema(
-                client_uuid = '', 
-                config = None, 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                deleted = True, 
-                enabled = True, 
-                id = '', 
-                last_notification = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                name = '', 
-                type = '', 
+                client_uuid = '',
+                config = None,
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                deleted = True,
+                enabled = True,
+                id = '',
+                last_notification = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                name = '',
+                type = '',
                 updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f')
             )
-        else :
+        else:
             return PolicyChannelSchema(
                 client_uuid = '',
                 config = None,

@@ -15,9 +15,7 @@
 import unittest
 import datetime
 
-import labs_alert_manager_client
 from labs_alert_manager_client.models.event_schema import EventSchema  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 class TestEventSchema(unittest.TestCase):
     """EventSchema unit test stubs"""
@@ -28,29 +26,29 @@ class TestEventSchema(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def make_instance(self, include_optional):
+    def make_instance(self, include_optional) -> EventSchema:
         """Test EventSchema
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
         # uncomment below to create an instance of `EventSchema`
         """
-        model = labs_alert_manager_client.models.event_schema.EventSchema()  # noqa: E501
-        if include_optional :
+        model = EventSchema()  # noqa: E501
+        if include_optional:
             return EventSchema(
-                client_source = '', 
-                client_uuid = '', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                data = None, 
-                event_type = '', 
-                id = '', 
-                labels = None, 
-                schema_version = '', 
-                severity = '', 
-                status = '', 
+                client_source = '',
+                client_uuid = '',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                data = None,
+                event_type = '',
+                id = '',
+                labels = None,
+                schema_version = '',
+                severity = '',
+                status = '',
                 updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f')
             )
-        else :
+        else:
             return EventSchema(
                 client_source = '',
                 client_uuid = '',

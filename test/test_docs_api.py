@@ -14,27 +14,25 @@
 
 import unittest
 
-import labs_alert_manager_client
 from labs_alert_manager_client.api.docs_api import DocsApi  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 
 class TestDocsApi(unittest.TestCase):
     """DocsApi unit test stubs"""
 
-    def setUp(self):
-        self.api = labs_alert_manager_client.api.docs_api.DocsApi()  # noqa: E501
+    def setUp(self) -> None:
+        self.api = DocsApi()  # noqa: E501
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass
 
-    def test_get_swagger_json(self):
+    def test_get_swagger_json(self) -> None:
         """Test case for get_swagger_json
 
         """
         pass
 
-    def test_get_swagger_yml(self):
+    def test_get_swagger_yml(self) -> None:
         """Test case for get_swagger_yml
 
         """

@@ -15,9 +15,7 @@
 import unittest
 import datetime
 
-import labs_alert_manager_client
 from labs_alert_manager_client.models.notification_schema import NotificationSchema  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 class TestNotificationSchema(unittest.TestCase):
     """NotificationSchema unit test stubs"""
@@ -28,28 +26,28 @@ class TestNotificationSchema(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def make_instance(self, include_optional):
+    def make_instance(self, include_optional) -> NotificationSchema:
         """Test NotificationSchema
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
         # uncomment below to create an instance of `NotificationSchema`
         """
-        model = labs_alert_manager_client.models.notification_schema.NotificationSchema()  # noqa: E501
-        if include_optional :
+        model = NotificationSchema()  # noqa: E501
+        if include_optional:
             return NotificationSchema(
-                client_uuid = '', 
-                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
+                client_uuid = '',
+                created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
                 events = [
                     ''
-                    ], 
-                first_event = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                id = '', 
-                retries = 56, 
-                status = 'Queued', 
+                    ],
+                first_event = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'),
+                id = '',
+                retries = 56,
+                status = 'Queued',
                 updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f')
             )
-        else :
+        else:
             return NotificationSchema(
                 client_uuid = '',
                 id = '',

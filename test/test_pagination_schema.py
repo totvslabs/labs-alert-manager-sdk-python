@@ -15,9 +15,7 @@
 import unittest
 import datetime
 
-import labs_alert_manager_client
 from labs_alert_manager_client.models.pagination_schema import PaginationSchema  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 class TestPaginationSchema(unittest.TestCase):
     """PaginationSchema unit test stubs"""
@@ -28,24 +26,24 @@ class TestPaginationSchema(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def make_instance(self, include_optional):
+    def make_instance(self, include_optional) -> PaginationSchema:
         """Test PaginationSchema
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
         # uncomment below to create an instance of `PaginationSchema`
         """
-        model = labs_alert_manager_client.models.pagination_schema.PaginationSchema()  # noqa: E501
-        if include_optional :
+        model = PaginationSchema()  # noqa: E501
+        if include_optional:
             return PaginationSchema(
-                page = 56, 
-                page_size = 56, 
+                page = 56,
+                page_size = 56,
                 rows = [
                     None
-                    ], 
+                    ],
                 total_rows = 56
             )
-        else :
+        else:
             return PaginationSchema(
                 page = 56,
                 page_size = 56,

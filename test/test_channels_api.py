@@ -14,51 +14,49 @@
 
 import unittest
 
-import labs_alert_manager_client
 from labs_alert_manager_client.api.channels_api import ChannelsApi  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 
 class TestChannelsApi(unittest.TestCase):
     """ChannelsApi unit test stubs"""
 
-    def setUp(self):
-        self.api = labs_alert_manager_client.api.channels_api.ChannelsApi()  # noqa: E501
+    def setUp(self) -> None:
+        self.api = ChannelsApi()  # noqa: E501
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass
 
-    def test_delete_policy_channels_delete(self):
+    def test_delete_policy_channels_delete(self) -> None:
         """Test case for delete_policy_channels_delete
 
         """
         pass
 
-    def test_get_policy_channels_get(self):
+    def test_get_policy_channels_get(self) -> None:
         """Test case for get_policy_channels_get
 
         """
         pass
 
-    def test_get_policy_channels_get_all(self):
+    def test_get_policy_channels_get_all(self) -> None:
         """Test case for get_policy_channels_get_all
 
         """
         pass
 
-    def test_post_policy_channels_post(self):
+    def test_post_policy_channels_post(self) -> None:
         """Test case for post_policy_channels_post
 
         """
         pass
 
-    def test_post_policy_channels_test(self):
+    def test_post_policy_channels_test(self) -> None:
         """Test case for post_policy_channels_test
 
         """
         pass
 
-    def test_put_policy_channels_put(self):
+    def test_put_policy_channels_put(self) -> None:
         """Test case for put_policy_channels_put
 
         """

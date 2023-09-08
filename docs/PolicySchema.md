@@ -15,10 +15,7 @@ Name | Type | Description | Notes
 **frequency_minutes** | **int** | Quantity of alert interval time | 
 **frequency_occurrences** | **int** | Quantity of alert occurrencies | 
 **id** | **str** | Id | 
-**labels** | **object** | Policy labels | 
 **name** | **str** | Policy name | 
-**severity** | **str** | Policy severity | 
-**type** | **str** | Policy type | 
 **updated_at** | **datetime** |  | [optional] 
 
 ## Example

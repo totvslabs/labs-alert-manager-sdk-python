@@ -14,21 +14,19 @@
 
 import unittest
 
-import labs_alert_manager_client
 from labs_alert_manager_client.api.health_check_api import HealthCheckApi  # noqa: E501
-from labs_alert_manager_client.rest import ApiException
 
 
 class TestHealthCheckApi(unittest.TestCase):
     """HealthCheckApi unit test stubs"""
 
-    def setUp(self):
-        self.api = labs_alert_manager_client.api.health_check_api.HealthCheckApi()  # noqa: E501
+    def setUp(self) -> None:
+        self.api = HealthCheckApi()  # noqa: E501
 
-    def tearDown(self):
+    def tearDown(self) -> None:
         pass
 
-    def test_get_health_check(self):
+    def test_get_health_check(self) -> None:
         """Test case for get_health_check
 
         """
