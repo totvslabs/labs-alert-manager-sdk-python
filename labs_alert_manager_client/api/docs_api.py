@@ -17,7 +17,6 @@ import io
 import warnings
 
 from pydantic import validate_arguments, ValidationError
-from typing_extensions import Annotated
 
 
 from labs_alert_manager_client.api_client import ApiClient
