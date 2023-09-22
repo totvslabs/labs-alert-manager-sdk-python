@@ -142,7 +142,7 @@ class EventsApi:
 
         # process the path parameters
         _path_params = {}
-        if _params['app_key']:
+        if _params['app_key'] is not None:
             _path_params['app_key'] = _params['app_key']
 
 
@@ -280,7 +280,7 @@ class EventsApi:
 
         # process the path parameters
         _path_params = {}
-        if _params['id']:
+        if _params['id'] is not None:
             _path_params['id'] = _params['id']
 
 
