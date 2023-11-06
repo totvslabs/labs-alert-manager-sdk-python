@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.health_check_api import HealthCheckApi  # noqa: E501
+from labs_alert_manager_client.api.health_check_api import HealthCheckApi
 
 
 class TestHealthCheckApi(unittest.TestCase):
     """HealthCheckApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = HealthCheckApi()  # noqa: E501
+        self.api = HealthCheckApi()
 
     def tearDown(self) -> None:
         pass

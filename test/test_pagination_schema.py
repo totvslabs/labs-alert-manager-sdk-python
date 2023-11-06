@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from labs_alert_manager_client.models.pagination_schema import PaginationSchema  # noqa: E501
+from labs_alert_manager_client.models.pagination_schema import PaginationSchema
 
 class TestPaginationSchema(unittest.TestCase):
     """PaginationSchema unit test stubs"""
@@ -33,7 +33,7 @@ class TestPaginationSchema(unittest.TestCase):
             optional params are included """
         # uncomment below to create an instance of `PaginationSchema`
         """
-        model = PaginationSchema()  # noqa: E501
+        model = PaginationSchema()
         if include_optional:
             return PaginationSchema(
                 page = 56,

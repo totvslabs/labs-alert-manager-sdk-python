@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from labs_alert_manager_client.models.policy_schema import PolicySchema  # noqa: E501
+from labs_alert_manager_client.models.policy_schema import PolicySchema
 
 class TestPolicySchema(unittest.TestCase):
     """PolicySchema unit test stubs"""
@@ -33,7 +33,7 @@ class TestPolicySchema(unittest.TestCase):
             optional params are included """
         # uncomment below to create an instance of `PolicySchema`
         """
-        model = PolicySchema()  # noqa: E501
+        model = PolicySchema()
         if include_optional:
             return PolicySchema(
                 channels = [

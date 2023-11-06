@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.welcome_api import WelcomeApi  # noqa: E501
+from labs_alert_manager_client.api.welcome_api import WelcomeApi
 
 
 class TestWelcomeApi(unittest.TestCase):
     """WelcomeApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = WelcomeApi()  # noqa: E501
+        self.api = WelcomeApi()
 
     def tearDown(self) -> None:
         pass

@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.events_api import EventsApi  # noqa: E501
+from labs_alert_manager_client.api.events_api import EventsApi
 
 
 class TestEventsApi(unittest.TestCase):
     """EventsApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = EventsApi()  # noqa: E501
+        self.api = EventsApi()
 
     def tearDown(self) -> None:
         pass

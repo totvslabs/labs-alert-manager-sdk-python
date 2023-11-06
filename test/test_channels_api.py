@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.channels_api import ChannelsApi  # noqa: E501
+from labs_alert_manager_client.api.channels_api import ChannelsApi
 
 
 class TestChannelsApi(unittest.TestCase):
     """ChannelsApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = ChannelsApi()  # noqa: E501
+        self.api = ChannelsApi()
 
     def tearDown(self) -> None:
         pass

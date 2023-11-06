@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.notifications_api import NotificationsApi  # noqa: E501
+from labs_alert_manager_client.api.notifications_api import NotificationsApi
 
 
 class TestNotificationsApi(unittest.TestCase):
     """NotificationsApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = NotificationsApi()  # noqa: E501
+        self.api = NotificationsApi()
 
     def tearDown(self) -> None:
         pass

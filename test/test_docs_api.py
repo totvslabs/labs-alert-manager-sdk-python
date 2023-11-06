@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.docs_api import DocsApi  # noqa: E501
+from labs_alert_manager_client.api.docs_api import DocsApi
 
 
 class TestDocsApi(unittest.TestCase):
     """DocsApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = DocsApi()  # noqa: E501
+        self.api = DocsApi()
 
     def tearDown(self) -> None:
         pass

@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from labs_alert_manager_client.models.event_schema import EventSchema  # noqa: E501
+from labs_alert_manager_client.models.event_schema import EventSchema
 
 class TestEventSchema(unittest.TestCase):
     """EventSchema unit test stubs"""
@@ -33,7 +33,7 @@ class TestEventSchema(unittest.TestCase):
             optional params are included """
         # uncomment below to create an instance of `EventSchema`
         """
-        model = EventSchema()  # noqa: E501
+        model = EventSchema()
         if include_optional:
             return EventSchema(
                 client_source = '',

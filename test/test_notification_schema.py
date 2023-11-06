@@ -15,7 +15,7 @@
 import unittest
 import datetime
 
-from labs_alert_manager_client.models.notification_schema import NotificationSchema  # noqa: E501
+from labs_alert_manager_client.models.notification_schema import NotificationSchema
 
 class TestNotificationSchema(unittest.TestCase):
     """NotificationSchema unit test stubs"""
@@ -33,7 +33,7 @@ class TestNotificationSchema(unittest.TestCase):
             optional params are included """
         # uncomment below to create an instance of `NotificationSchema`
         """
-        model = NotificationSchema()  # noqa: E501
+        model = NotificationSchema()
         if include_optional:
             return NotificationSchema(
                 client_uuid = '',

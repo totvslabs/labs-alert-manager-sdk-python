@@ -14,14 +14,14 @@
 
 import unittest
 
-from labs_alert_manager_client.api.policies_api import PoliciesApi  # noqa: E501
+from labs_alert_manager_client.api.policies_api import PoliciesApi
 
 
 class TestPoliciesApi(unittest.TestCase):
     """PoliciesApi unit test stubs"""
 
     def setUp(self) -> None:
-        self.api = PoliciesApi()  # noqa: E501
+        self.api = PoliciesApi()
 
     def tearDown(self) -> None:
         pass
